@@ -6,6 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小学网页</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(44, 44, 44);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .color1{
+            color: whitesmoke;
+        }
+    </style>
 </head>
 
 <body style="padding: 3px;
@@ -13,26 +35,41 @@ background-color: rgb(34, 34, 34);">
     <div style="display: flex;
     flex-direction: column;
     align-items: center;">
-        <h1 style="font-size: xx-larger;">
-            小学网页
-        </h1>
+        <div class="dropdown">
+            <h1 style="font-size: xx-larger;
+            color: white;">
+                小学网页
+            </h1>
+            <div class="dropdown-content">
+                <p class="color1">
+                    仅用于纪念小学
+                </p>
+            </div>
+        </div>
     </div>
     <div style="display: flex;
     flex-direction: column;
     align-items: center;">
-        <h2>
+        <h2 class="color1">
             成立时间
         </h2>
-        <span>
+        <span class="color1">
             <b style="font-size: large;">成立时间:</b>2014年
         </span>
     </div>
     <div style="display: flex;
     flex-direction: column;
     align-items: center;">
-        <h2>
+    <div class="dropdown">
+        <h2 class="color1">
             成员
         </h2>
+        <div class="dropdown-content">
+            <p class="color1">
+                均为小学同班同学。
+            </p>
+        </div>
+    </div>
         <div style="display: flex;
         flex-direction: column;
         align-items: center;">
